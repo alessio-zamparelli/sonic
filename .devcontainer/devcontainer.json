@@ -1,0 +1,19 @@
+{
+    "name": "Rust",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "rust-lang.rust-analyzer",
+          "captainstack.captain-stack",
+          "esbenp.prettier-vscode",
+          "serayuzgur.crates",
+          "bungcip.better-toml",
+          "ms-azuretools.vscode-docker",
+          "github.vscode-github-actions"
+        ]
+      }
+    }
+  }
