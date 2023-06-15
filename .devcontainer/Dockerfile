@@ -8,11 +8,9 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get purge -y imagemagick imagemagick-6-common \
     && curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \
     && apt-get install nodejs \
-    && apt-get -y install g++-mingw-w64-x86-64 
+    && apt-get -y install build-essential clang 
 
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
    # && apt-get -y install g++-mingw-w64-x86-64 
 
-RUN rustup target add x86_64-pc-windows-gnu 
-RUN rustup toolchain install stable-x86_64-pc-windows-gnu 
-RUN rustup toolchain install stable-aarch64-unknown-linux-gnu
+RUN rustup target add aarch64-unknown-linux-gnu
